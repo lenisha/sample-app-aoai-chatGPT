@@ -26,5 +26,4 @@ jobs:
     - name: Run app in App Service from ACR test
       run: |
         az login --service-principal -u ${{ secrets.APPID }} -p ${{ secrets.SECRET }} --tenant ${{ secrets.TENANTID }}
-        az webapp config set --resource-group r-shiny-app --name r-shiny-app-hudua-cd --linux-fx-version "DOCKER|azuremlhuduaa31f772f.azurecr.io/my-r-shiny-app:latest"          
-     
+        az webapp up --runtime PYTHON:3.11 --sku B3 --name webappstatscantest --resource-group statscan-chatbot-mtc-app-rg     
