@@ -19,7 +19,7 @@ if [ $? -ne 0 ]; then
     exit $?
 fi
 
-# cd ..
+cd ..
 # . ./scripts/loadenv.sh
 
 # echo ""
