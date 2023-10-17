@@ -25,5 +25,6 @@ jobs:
     - uses: actions/checkout@v3
     - name: Run app in App Service from ACR test
       run: |
+        start.cmd
         az login --service-principal -u ${{ secrets.APPID }} -p ${{ secrets.SECRET }} --tenant ${{ secrets.TENANTID }}
         az webapp up --runtime PYTHON:3.11 --sku B3 --name webappstatscantest --resource-group statscan-chatbot-mtc-app-rg     
