@@ -554,7 +554,7 @@ const Chat = () => {
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h1 className={styles.chatEmptyStateTitle}>Statistics Canada ChatBot</h1>
+                                <h1 className={styles.chatEmptyStateTitle}>Welcome to the Statistics Canada ChatBot!</h1>
                                 <h2 className={styles.chatEmptyStateSubtitle}>This chatbot is configured to answer your questions. Let's try it!</h2>
                             </Stack>
                         ) : (
